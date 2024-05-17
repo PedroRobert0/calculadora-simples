@@ -22,9 +22,9 @@ function calcular(n1, n2){
 
             case'/':
             calculo = Math.round((n1 / n2))
-            if(Number.isInteger(calculo)){
+            if(Number.isNaN(calculo)){
                 document.getElementById("resultado").innerHTML = `insira um número divisível válido!`
-            } else{
+            } else {
             document.getElementById("resultado").innerHTML = `O resultado da divisão de ${n1} / ${n2} é = ${calculo}`   
             break
             }    
